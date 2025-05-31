@@ -4,3 +4,4 @@
 
 참고자료
 https://developers.kakao.com/docs/latest/ko/kakaologin/android
+https://krdict.korean.go.kr/openApi/openApiInfo
