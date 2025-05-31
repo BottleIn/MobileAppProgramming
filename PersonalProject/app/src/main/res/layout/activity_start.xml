@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFCC">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="끝말잇기 게임"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <!-- 로고 이미지 -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_image" />
+
+    <!-- 설명 텍스트 -->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="카카오 로그인 버튼을 눌러 게임을 시작하세요"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <ImageButton
+        android:id="@+id/btn_kakao_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/kakao_login_medium_narrow" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_kakao_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="닉네임: "
+        android:visibility="gone" />
+
+
+</RelativeLayout>

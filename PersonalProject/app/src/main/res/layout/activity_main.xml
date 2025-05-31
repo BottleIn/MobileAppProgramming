@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvGameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="끝말잇기 게임을 시작합니다"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGameInfo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="16dp"
+        android:text="닉네임: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점수: 0"
+        android:textSize="18sp"
+        android:layout_below="@id/tvNickname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남은 시간: 60초"
+        android:textSize="18sp"
+        android:layout_below="@id/tvScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etUserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTimer"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="단어를 입력하세요" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:layout_below="@id/etUserInput"/>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다시 시작"
+        android:layout_below="@id/etUserInput"
+        android:layout_toEndOf="@id/btnSubmit"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그만"
+        android:layout_below="@id/btnRestart"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="순위표"
+        android:layout_below="@id/btnRestart"
+        android:layout_toEndOf="@id/btnQuit"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDefinition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단어의 뜻이 여기에 표시됩니다."
+        android:textSize="16sp"
+        android:layout_below="@id/btnQuit"
+        android:layout_marginTop="16dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDefinition"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/llHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+</RelativeLayout>

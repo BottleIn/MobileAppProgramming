@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#CCFFCC">
+
+    <!-- 사용자 이름과 반기는 메시지 -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다, 사용자 이름님!"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메인 메뉴"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="끝말잇기 게임"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_to_dictionary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="단어 찾기"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="16dp"
+        android:textSize="18sp"/>
+</LinearLayout>
